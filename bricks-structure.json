@@ -1,0 +1,161 @@
+{
+  "content": [
+    {
+      "id": "ybdkwg",
+      "name": "div",
+      "parent": 0,
+      "children": ["udlhao", "nngwfa"],
+      "settings": {}
+    },
+    {
+      "id": "udlhao",
+      "name": "section",
+      "parent": "ybdkwg",
+      "children": ["pgfpdd", "oaljyq", "slmaba"],
+      "settings": {
+        "_cssGlobalClasses": [
+          "oxyprops-o-relative",
+          "oxyprops-o-pad-bl-7",
+          "acrjls"
+        ],
+        "tag": "custom",
+        "customTag": "header"
+      }
+    },
+    {
+      "id": "pgfpdd",
+      "name": "bricksprops-light-dark-toggle",
+      "parent": "udlhao",
+      "children": [],
+      "settings": {
+        "_cssGlobalClasses": ["oxyprops-o-absolute"],
+        "_top": "var(--o-size-fluid-2)",
+        "_right": "var(--o-size-fluid-2)",
+        "toggleSize": "var(--o-size-fluid-2)"
+      }
+    },
+    {
+      "id": "oaljyq",
+      "name": "div",
+      "parent": "udlhao",
+      "children": [],
+      "settings": {
+        "tag": "custom",
+        "customTag": "canvas",
+        "_width": "100%",
+        "_cssId": "canv",
+        "_height": "50vh",
+        "_attributes": [
+          { "id": "oswrsz", "name": "width", "value": "30" },
+          { "id": "mopjkm", "name": "height", "value": "30" },
+          { "id": "ujhaqf", "name": "red", "value": "0.9" },
+          { "id": "vjamou", "name": "green", "value": "0.6" },
+          { "id": "mxxdcf", "name": "blue", "value": "1" },
+          { "id": "dpcgil", "name": "variable-part", "value": "0.33" },
+          { "id": "obmthg", "name": "dark-ratio", "value": "0.45" }
+        ],
+        "_cssCustom": "#canv {\n  clip-path: polygon( 0 0, 100% 0, 100% 33%, 0 100%);\n}",
+        "_cssGlobalClasses": ["oxyprops-o-absolute", "oxyprops-o-inset-0"],
+        "_zIndex": "-1",
+        "_background": { "color": { "raw": "var(--o-brand)" } },
+        "_widthMax": "100%",
+        "_top": "0",
+        "_left": "0"
+      },
+      "label": "Canvas"
+    },
+    {
+      "id": "slmaba",
+      "name": "container",
+      "parent": "udlhao",
+      "children": ["oqziqa", "xsuamb", "nzvotq"],
+      "settings": { "_cssGlobalClasses": ["oxyprops-o-relative"] }
+    },
+    {
+      "id": "oqziqa",
+      "name": "heading",
+      "parent": "slmaba",
+      "children": [],
+      "settings": {
+        "text": "Financial infrastructure for the internet",
+        "tag": "h1",
+        "_width": "11ch",
+        "_typography": {
+          "font-size": "var(--o-fluid-font-6)",
+          "line-height": "var(--o-font-lineheight-0)",
+          "color": { "hex": "#272f3a", "raw": "var(--o-surface-2)" }
+        },
+        "_cssGlobalClasses": ["oxyprops-o-absolute"],
+        "_zIndex": "-2",
+        "_opacity": "0.3"
+      }
+    },
+    {
+      "id": "xsuamb",
+      "name": "heading",
+      "parent": "slmaba",
+      "children": [],
+      "settings": {
+        "text": "Financial infrastructure for the internet",
+        "tag": "h1",
+        "_width": "11ch",
+        "_typography": {
+          "font-size": "var(--o-fluid-font-6)",
+          "line-height": "var(--o-font-lineheight-0)",
+          "color": { "raw": "var(--o-text-2)" }
+        },
+        "_cssCustom": "#blend-heading {\nmix-blend-mode: color-burn;\n}",
+        "_cssGlobalClasses": ["oxyprops-o-absolute"],
+        "_zIndex": "var(--o-layer-2)",
+        "_opacity": "1",
+        "_attributes": [
+          { "id": "ryzrqu", "name": "aria-hidden", "value": "true" }
+        ],
+        "_cssId": "blend-heading"
+      }
+    },
+    {
+      "id": "nzvotq",
+      "name": "heading",
+      "parent": "slmaba",
+      "children": [],
+      "settings": {
+        "text": "Financial infrastructure for the internet",
+        "tag": "h1",
+        "_width": "11ch",
+        "_typography": {
+          "font-size": "var(--o-fluid-font-6)",
+          "line-height": "var(--o-font-lineheight-0)",
+          "color": { "raw": "var(--o-text-2)" }
+        },
+        "_cssGlobalClasses": ["oxyprops-o-absolute"],
+        "_opacity": "0.3",
+        "_zIndex": "var(--o-layer-2)",
+        "_attributes": [
+          { "id": "cgdyjb", "name": "aria-hidden", "value": "true" }
+        ]
+      }
+    },
+    {
+      "id": "nngwfa",
+      "name": "code",
+      "parent": "ybdkwg",
+      "children": [],
+      "settings": {
+        "code": "<script>\nconst gradientCanvas = document.getElementById(\"canv\");\nconst blendHeading = document.getElementById(\"blend-heading\");\nconst canvasContext = gradientCanvas.getContext(\"2d\");\nconst canvasWidth = gradientCanvas.getAttribute(\"width\");\nconst canvasHeight = gradientCanvas.getAttribute(\"height\");\nconst redRatio = gradientCanvas.getAttribute(\"red\");\nconst greenRatio = gradientCanvas.getAttribute(\"green\");\nconst blueRatio = gradientCanvas.getAttribute(\"blue\");\nconst variablePart = gradientCanvas.getAttribute(\"variable-part\");\nconst darkRatio = gradientCanvas.getAttribute(\"dark-ratio\");\n\nlet colorScheme = document.firstElementChild.getAttribute(\"color-scheme\");\nlet actualDarkRatio = colorScheme == \"light\" ? 1 : darkRatio;\n\nconst setColor = (x, y, r, g, b) => {\n  canvasContext.fillStyle = \"rgb(\" + r + \",\" + g + \",\" + b + \")\";\n  canvasContext.fillRect(x, y, 1, 1);\n};\n\nconst redComponent = (x, y, t, actualDarkRatio) => {\n  return (\n    Math.floor(256 * (1 - variablePart) * actualDarkRatio * redRatio) +\n    Math.floor(\n      256 *\n        variablePart *\n        actualDarkRatio *\n        redRatio *\n        Math.cos((x * x - y * y) / 300 + t)\n    )\n  );\n};\n\nconst greenComponent = function (x, y, t, actualDarkRatio) {\n  return (\n    Math.floor(256 * (1 - variablePart) * actualDarkRatio * greenRatio) +\n    Math.floor(\n      256 *\n        variablePart *\n        actualDarkRatio *\n        greenRatio *\n        Math.sin((x * x * Math.cos(t / 4) + y * y * Math.sin(t / 3)) / 300)\n    )\n  );\n};\n\nconst blueComponent = function (x, y, t, actualDarkRatio) {\n  return (\n    Math.floor(256 * (1 - variablePart) * actualDarkRatio * blueRatio) +\n    Math.floor(\n      256 *\n        variablePart *\n        actualDarkRatio *\n        blueRatio *\n        Math.sin(\n          5 * Math.sin(t / 9) +\n            ((x - 100) * (x - 100) + (y - 100) * (y - 100)) / 1100\n        )\n    )\n  );\n};\n\nlet t = 0;\n\nconst generateThatCanvas = () => {\n  for (x = 0; x <= canvasWidth; x++) {\n    for (y = 0; y <= canvasHeight; y++) {\n      setColor(\n        x,\n        y,\n        redComponent(x, y, t, actualDarkRatio),\n        greenComponent(x, y, t, actualDarkRatio),\n        blueComponent(x, y, t, actualDarkRatio)\n      );\n    }\n  }\n  t = t + 0.01;\n  colorScheme = document.firstElementChild.getAttribute(\"color-scheme\");\n  if (colorScheme == \"light\") {\n    actualDarkRatio = 1;\n    blendHeading.style.mixBlendMode = \"color-burn\";\n  } else {\n    blendHeading.style.mixBlendMode = \"color-dodge\";\n    actualDarkRatio = darkRatio;\n  }\n  window.requestAnimationFrame(generateThatCanvas);\n};\ngenerateThatCanvas();\n</script>",
+        "executeCode": true
+      }
+    }
+  ],
+  "source": "bricksCopiedElements",
+  "sourceUrl": "https://brx-test.test",
+  "version": "1.6.2",
+  "globalClasses": [
+    { "id": "oxyprops-o-relative", "name": "o-relative", "settings": [] },
+    { "id": "oxyprops-o-pad-bl-7", "name": "o-pad-bl-7", "settings": [] },
+    { "id": "acrjls", "name": "o-isolate", "settings": [] },
+    { "id": "oxyprops-o-absolute", "name": "o-absolute", "settings": [] },
+    { "id": "oxyprops-o-inset-0", "name": "o-inset-0", "settings": [] }
+  ],
+  "globalElements": []
+}

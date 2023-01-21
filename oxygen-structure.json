@@ -1,0 +1,210 @@
+{
+  "id": 0,
+  "name": "root",
+  "depth": 0,
+  "children": [
+    {
+      "id": 4,
+      "name": "ct_section",
+      "options": {
+        "ct_id": 4,
+        "ct_parent": 0,
+        "selector": "section-4-749",
+        "original": {
+          "image_type": "2",
+          "attachment_size": "full",
+          "tag": "header",
+          "custom-attributes": [{ "name": "role", "value": "banner" }]
+        },
+        "nicename": "<header> Header Section",
+        "classes": ["o-relative", "o-pad-bl-7", "o-isolate"],
+        "activeselector": "o-isolate"
+      },
+      "depth": 1,
+      "children": [
+        {
+          "id": 7,
+          "name": "oxy-op-light-dark-toggle",
+          "options": {
+            "ct_id": 7,
+            "ct_parent": 4,
+            "selector": "-op-light-dark-toggle-7-749",
+            "original": {
+              "image_type": "2",
+              "attachment_size": "full",
+              "right-unit": " ",
+              "right": "var(--o-size-fluid-2)",
+              "top-unit": " ",
+              "top": "var(--o-size-fluid-2)"
+            },
+            "nicename": "Light/Dark Toggle (#7)",
+            "activeselector": false,
+            "classes": ["o-absolute"]
+          },
+          "depth": 2
+        },
+        {
+          "id": 8,
+          "name": "ct_div_block",
+          "options": {
+            "ct_id": 8,
+            "ct_parent": 4,
+            "selector": "canv",
+            "original": {
+              "image_type": "2",
+              "attachment_size": "full",
+              "tag": "canvas",
+              "useCustomTag": "true",
+              "custom-attributes": [
+                { "name": "width", "value": "30" },
+                { "name": "height", "value": "30" },
+                { "name": "red", "value": "1" },
+                { "name": "green", "value": "0.5" },
+                { "name": "blue", "value": "0.9" },
+                { "name": "variable-part", "value": "0.33" },
+                { "name": "dark-ratio", "value": "0.5" }
+              ],
+              "width": "100%",
+              "width-unit": " ",
+              "height": "50vh",
+              "height-unit": " ",
+              "z-index": "-1",
+              "null-unit": " ",
+              "custom-css": "clip-path: polygon( 0 0, 100% 0, 100% 33%, 0 100%);"
+            },
+            "nicename": "<canvas> Div",
+            "activeselector": false,
+            "classes": ["o-absolute", "o-inset-0"]
+          },
+          "depth": 2
+        },
+        {
+          "id": 15,
+          "name": "ct_div_block",
+          "options": {
+            "ct_id": 15,
+            "ct_parent": 4,
+            "selector": "div_block-15-749",
+            "original": {
+              "image_type": "2",
+              "attachment_size": "full",
+              "tag": "div",
+              "width-unit": " ",
+              "width": "100%"
+            },
+            "nicename": "<div> Div",
+            "activeselector": false,
+            "classes": ["o-relative"]
+          },
+          "depth": 2,
+          "children": [
+            {
+              "id": 17,
+              "name": "ct_headline",
+              "options": {
+                "ct_id": 17,
+                "ct_parent": 15,
+                "selector": "headline-17-749",
+                "original": {
+                  "image_type": "2",
+                  "attachment_size": "full",
+                  "max-width": "15ch",
+                  "max-width-unit": " ",
+                  "font-size": "var(--o-fluid-font-6)",
+                  "font-size-unit": " ",
+                  "color": "var(--o-surface-2)",
+                  "z-index": "-1",
+                  "null-unit": " ",
+                  "opacity": "0.3",
+                  "opacity-unit": " "
+                },
+                "nicename": "Heading (#17)",
+                "ct_content": "Infrastructure de paiement pour le commerce en ligne",
+                "activeselector": false,
+                "classes": ["o-absolute"]
+              },
+              "depth": 3
+            },
+            {
+              "id": 19,
+              "name": "ct_headline",
+              "options": {
+                "ct_id": 19,
+                "ct_parent": 15,
+                "selector": "blend-heading",
+                "original": {
+                  "image_type": "2",
+                  "attachment_size": "full",
+                  "max-width": "15ch",
+                  "max-width-unit": " ",
+                  "font-size": "var(--o-fluid-font-6)",
+                  "font-size-unit": " ",
+                  "color": "var(--o-text-2)",
+                  "z-index": "var(--o-layer-2)",
+                  "null-unit": " ",
+                  "custom-css": "",
+                  "mix-blend-mode": "color-burn",
+                  "opacity": "1",
+                  "opacity-unit": " "
+                },
+                "nicename": "Heading (#19)",
+                "ct_content": "Infrastructure de paiement pour le commerce en ligne",
+                "activeselector": false,
+                "classes": ["o-absolute"]
+              },
+              "depth": 3
+            },
+            {
+              "id": 20,
+              "name": "ct_headline",
+              "options": {
+                "ct_id": 20,
+                "ct_parent": 15,
+                "selector": "headline-20-749",
+                "original": {
+                  "image_type": "2",
+                  "attachment_size": "full",
+                  "max-width": "15ch",
+                  "max-width-unit": " ",
+                  "font-size": "var(--o-fluid-font-6)",
+                  "font-size-unit": " ",
+                  "color": "var(--o-text-2)",
+                  "z-index": "var(--o-layer-3)",
+                  "null-unit": " ",
+                  "custom-css": "",
+                  "opacity": "0.3",
+                  "opacity-unit": " "
+                },
+                "nicename": "Heading (#20)",
+                "ct_content": "Infrastructure de paiement pour le commerce en ligne",
+                "activeselector": false,
+                "classes": ["o-absolute"]
+              },
+              "depth": 3
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "name": "ct_code_block",
+          "options": {
+            "ct_id": 10,
+            "ct_parent": 4,
+            "selector": "code_block-10-749",
+            "original": {
+              "image_type": "2",
+              "attachment_size": "full",
+              "unwrap": "true",
+              "code-js": "const gradientCanvas = document.getElementById(\"canv\");\nconst blendHeading = document.getElementById(\"blend-heading\");\nconst canvasContext = gradientCanvas.getContext(\"2d\");\nconst canvasWidth = gradientCanvas.getAttribute(\"width\");\nconst canvasHeight = gradientCanvas.getAttribute(\"height\");\nconst redRatio = gradientCanvas.getAttribute(\"red\");\nconst greenRatio = gradientCanvas.getAttribute(\"green\");\nconst blueRatio = gradientCanvas.getAttribute(\"blue\");\nconst variablePart = gradientCanvas.getAttribute(\"variable-part\");\nconst darkRatio = gradientCanvas.getAttribute(\"dark-ratio\");\n\nlet colorScheme = document.firstElementChild.getAttribute(\"color-scheme\");\nlet actualDarkRatio = colorScheme == \"light\" ? 1 : darkRatio;\n\nconst setColor = (x, y, r, g, b) => {\n  canvasContext.fillStyle = \"rgb(\" + r + \",\" + g + \",\" + b + \")\";\n  canvasContext.fillRect(x, y, 1, 1);\n};\n\nconst redComponent = (x, y, t, actualDarkRatio) => {\n  return (\n    Math.floor(256 * (1 - variablePart) * actualDarkRatio * redRatio) +\n    Math.floor(\n      256 *\n        variablePart *\n        actualDarkRatio *\n        redRatio *\n        Math.cos((x * x - y * y) / 300 + t)\n    )\n  );\n};\n\nconst greenComponent = function (x, y, t, actualDarkRatio) {\n  return (\n    Math.floor(256 * (1 - variablePart) * actualDarkRatio * greenRatio) +\n    Math.floor(\n      256 *\n        variablePart *\n        actualDarkRatio *\n        greenRatio *\n        Math.sin((x * x * Math.cos(t / 4) + y * y * Math.sin(t / 3)) / 300)\n    )\n  );\n};\n\nconst blueComponent = function (x, y, t, actualDarkRatio) {\n  return (\n    Math.floor(256 * (1 - variablePart) * actualDarkRatio * blueRatio) +\n    Math.floor(\n      256 *\n        variablePart *\n        actualDarkRatio *\n        blueRatio *\n        Math.sin(\n          5 * Math.sin(t / 9) +\n            ((x - 100) * (x - 100) + (y - 100) * (y - 100)) / 1100\n        )\n    )\n  );\n};\n\nlet t = 0;\n\nconst generateThatCanvas = () => {\n  for (x = 0; x <= canvasWidth; x++) {\n    for (y = 0; y <= canvasHeight; y++) {\n      setColor(\n        x,\n        y,\n        redComponent(x, y, t, actualDarkRatio),\n        greenComponent(x, y, t, actualDarkRatio),\n        blueComponent(x, y, t, actualDarkRatio)\n      );\n    }\n  }\n  t = t + 0.01;\n  colorScheme = document.firstElementChild.getAttribute(\"color-scheme\");\n  if (colorScheme === \"light\") {\n    actualDarkRatio = 1;\n    blendHeading.style.mixBlendMode = \"color-burn\";\n  } else {\n    blendHeading.style.mixBlendMode = \"color-dodge\";\n    actualDarkRatio = darkRatio;\n  }\n  window.requestAnimationFrame(generateThatCanvas);\n};\n\ngenerateThatCanvas();\n",
+              "code-php": "<?php\n\t// Nothing\n?>"
+            },
+            "nicename": "Code Block (#10)",
+            "activeselector": false
+          },
+          "depth": 2
+        }
+      ]
+    }
+  ],
+  "meta_keys": []
+}
